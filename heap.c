@@ -22,7 +22,7 @@ void* heap_top(Heap* pq)
   if(pq->size==0)
     return NULL;
 
-  return pq->heapArray;
+  return pq->heapArray.data;
 }
 
 
