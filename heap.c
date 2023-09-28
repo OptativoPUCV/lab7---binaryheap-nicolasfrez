@@ -44,4 +44,5 @@ Heap* createHeap()
     free(newHeap);
     return NULL;
   }
+  return newHeap;
 }

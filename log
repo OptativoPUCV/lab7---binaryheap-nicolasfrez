@@ -16,3 +16,14 @@ heap.c:41:68: error: ‘*newHeap.capac’ may be used uninitialized [-Werror=may
 cc1: all warnings being treated as errors
 Compilation failed
 d243153
+Thu 28 Sep 2023 04:01:23 PM UTC: 
+ heap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+heap.c: In function ‘createHeap’:
+heap.c:41:68: error: ‘*newHeap.capac’ may be used uninitialized [-Werror=maybe-uninitialized]
+   41 |   newHeap->heapArray = (heapElem*)malloc(sizeof(heapElem) * newHeap->capac);
+      |                                                             ~~~~~~~^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6bfef12
