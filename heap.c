@@ -54,15 +54,24 @@ void heap_push(Heap* pq, void* data, int priority)
       else
         break;
     }
-  
-
-  
-  
 }
 
 
-void heap_pop(Heap* pq){
+void heap_pop(Heap* pq)
+{
+  pq->heapArray[0] = pq->heapArray[pq->size-1];
 
+  int current = 0;
+
+  while(1)
+    {
+      int leftIndex= 2*current+1;
+      int rightIndex= 2*current+2;
+
+      int largeIndex = current;
+    }
+  
+  
 }
 
 Heap* createHeap()
