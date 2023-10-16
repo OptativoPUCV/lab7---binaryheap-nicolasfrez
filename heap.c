@@ -47,6 +47,7 @@ void heap_push(Heap* pq, void* data, int priority)
       if(pq->heapArray[parentIndex].priority < pq->heapArray[currentIndex].priority)
       {
         heapElem temp = pq->heapArray[currentIndex];
+        pq->heapArray[currentIdx] = pq->heapArray[parentIdx];
         pq->heapArray[parentIndex] = temp;
         currentIndex=parentIndex;
       }

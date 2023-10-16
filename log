@@ -156,3 +156,22 @@ heap.c:46:7: error: ‘parentIndex’ undeclared (first use in this function); d
 heap.c:46:7: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 444b8df
+Mon 16 Oct 2023 01:09:17 AM UTC: 
+ heap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:46:7: error: ‘parentIndex’ undeclared (first use in this function); did you mean ‘currentIndex’?
+   46 |       parentIndex = (currentIndex-1)/2;
+      |       ^~~~~~~~~~~
+      |       currentIndex
+heap.c:46:7: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:50:23: error: ‘currentIdx’ undeclared (first use in this function); did you mean ‘currentIndex’?
+   50 |         pq->heapArray[currentIdx] = pq->heapArray[parentIdx];
+      |                       ^~~~~~~~~~
+      |                       currentIndex
+heap.c:50:51: error: ‘parentIdx’ undeclared (first use in this function)
+   50 |         pq->heapArray[currentIdx] = pq->heapArray[parentIdx];
+      |                                                   ^~~~~~~~~
+Compilation failed
+bd22f6f
