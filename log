@@ -242,3 +242,19 @@ heap.c:50:51: error: ‘parentIdx’ undeclared (first use in this function)
       |                                                   ^~~~~~~~~
 Compilation failed
 cbb740d
+Mon 16 Oct 2023 01:12:04 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:50:23: error: ‘currentIdx’ undeclared (first use in this function); did you mean ‘currentIndex’?
+   50 |         pq->heapArray[currentIdx] = pq->heapArray[parentIdx];
+      |                       ^~~~~~~~~~
+      |                       currentIndex
+heap.c:50:23: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:50:51: error: ‘parentIdx’ undeclared (first use in this function); did you mean ‘parentIndex’?
+   50 |         pq->heapArray[currentIdx] = pq->heapArray[parentIdx];
+      |                                                   ^~~~~~~~~
+      |                                                   parentIndex
+Compilation failed
+1f93ee0
