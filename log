@@ -258,3 +258,9 @@ heap.c:50:51: error: ‘parentIdx’ undeclared (first use in this function); di
       |                                                   parentIndex
 Compilation failed
 1f93ee0
+Mon 16 Oct 2023 01:12:52 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  7|1
+total_score: 45/70
+d59cbaf
