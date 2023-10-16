@@ -33,7 +33,7 @@ void heap_push(Heap* pq, void* data, int priority)
   {
     int newCap;
     pq->heapArray=realloc(pq->heapArray,sizeof(heapElem)*pq->capac);
-    pq->cap=newCap;
+    pq->capac=newCap;
 
   }
   int currentIndex= pq->size;
