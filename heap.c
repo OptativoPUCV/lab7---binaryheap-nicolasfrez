@@ -75,7 +75,7 @@ void heap_pop(Heap* pq)
       if(rightIndex<pq->size && pq->heapArray[rightIndex].priority > pq->heapArray[largeIndex].priority)
         largeIndex = rightIndex;
 
-      if(largeIndex == current)
+      if(largeIndex != current)
       {
         heapElem temp= pq->heapArray[current];
         pq->heapArray[current] = pq->heapArray[largeIndex];
