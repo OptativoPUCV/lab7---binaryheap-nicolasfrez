@@ -98,3 +98,18 @@ Thu 28 Sep 2023 04:38:53 PM UTC:
  tests:  2|2
 total_score: 20/70
 cb64335
+Mon 16 Oct 2023 01:02:37 AM UTC: 
+ heap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:36:9: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘cap’; did you mean ‘capac’?
+   36 |     pq->cap=newCap;
+      |         ^~~
+      |         capac
+heap.c:39:7: error: unused variable ‘currentIndex’ [-Werror=unused-variable]
+   39 |   int currentIndex= pq->size;
+      |       ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6fe2af7
