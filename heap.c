@@ -36,7 +36,18 @@ void heap_push(Heap* pq, void* data, int priority)
     pq->capac=newCap;
 
   }
-  int currentIndex= pq->size;
+  int currentIndex = pq->size;
+  pq->heapArray[currentIndex].data = data;
+  pq->heapArray[currentIndex].priority = priority;
+  pq->size++;
+
+  while(currentIndex>0)
+    {
+      parent
+    }
+  
+
+  
   
 }
 

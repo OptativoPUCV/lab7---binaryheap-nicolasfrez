@@ -127,3 +127,20 @@ heap.c:36:14: error: ‘newCap’ may be used uninitialized [-Werror=maybe-unini
 cc1: all warnings being treated as errors
 Compilation failed
 4d8717e
+Mon 16 Oct 2023 01:06:06 AM UTC: 
+ heap.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:46:7: error: ‘parent’ undeclared (first use in this function)
+   46 |       parent
+      |       ^~~~~~
+heap.c:46:7: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:46:13: error: expected ‘;’ before ‘}’ token
+   46 |       parent
+      |             ^
+      |             ;
+   47 |     }
+      |     ~        
+Compilation failed
+ef05db7
