@@ -81,6 +81,7 @@ void heap_pop(Heap* pq)
         pq->heapArray[current] = pq->heapArray[largeIndex];
         pq->heapArray[largeIndex] = temp;
 
+        current=largeIndex;
       }
       else
         break;
