@@ -69,6 +69,12 @@ void heap_pop(Heap* pq)
       int rightIndex= 2*current+2;
 
       int largeIndex = current;
+
+      if(leftIndex<pq->size && pq->heapArray[leftIndex].priority > pq->heapArray[largeIndex].priority))
+        largeIndex = leftIndex;
+      if(rightIndex<pq->size && pq->heapArray[leftIndex].priority > pq->heapArray[largeIndex].priority))
+        largeIndex = rightIndex;
+        
     }
   
   

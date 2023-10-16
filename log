@@ -281,3 +281,16 @@ heap.c:68:11: error: unused variable ‘leftIndex’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 a6c5285
+Mon 16 Oct 2023 01:23:16 AM UTC: 
+ heap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:73:103: error: expected statement before ‘)’ token
+   73 |       if(leftIndex<pq->size && pq->heapArray[leftIndex].priority > pq->heapArray[largeIndex].priority))
+      |                                                                                                       ^
+heap.c:75:104: error: expected statement before ‘)’ token
+   75 |       if(rightIndex<pq->size && pq->heapArray[leftIndex].priority > pq->heapArray[largeIndex].priority))
+      |                                                                                                        ^
+Compilation failed
+de08296
